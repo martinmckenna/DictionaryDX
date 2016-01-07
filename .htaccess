@@ -1,0 +1,6 @@
+<FilesMatch "admin.php">
+AuthName "Member Only"
+AuthType Basic
+AuthUserFile C:\Users\Martin\Documents\GitHub\Dictionary\htpass\.htpasswd
+require valid-user
+</FilesMatch>
