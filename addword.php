@@ -4,13 +4,15 @@
 	if(isset($_POST['submit'])){ //checks if a form named submit has been added
 	if (empty($_POST["word"])) {
     echo "<h3>Word field blank</h3>";
-  }
+  
   if (empty($_POST["def"])) {
     echo "<h3>Definition field blank</h3>";
-  }
+  
   if (empty($_POST["pos"])) {
     echo "<h3>Part of Speech not selected</h3>";
   }
+  }
+    }
   else {
 	if(!check_word($_POST['word'])){ //checks the name part of the form to see if it already exists
 		add_word($_POST);
